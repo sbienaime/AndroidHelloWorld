@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
          //sends messages to logcat under information
         Log.i("OPERATION", edtName.getText().toString());
 
-
+         // create a toast
          Toast.makeText(MainActivity.this, showtext.getText().toString(), Toast.LENGTH_LONG).show();
-
+         ImageView img  = findViewById(R.id.img);
+         img.setImageResource(R.drawable.colored);
      }
 
 
